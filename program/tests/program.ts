@@ -10,10 +10,11 @@ describe("program", () => {
   const dataAccount = anchor.web3.Keypair.generate();
   const wallet = provider.wallet;
 
-  const program = anchor.workspace.Program as Program<HelloWorld>;
+  const program = anchor.workspace.HelloWorld as Program<HelloWorld>;
 
   it("Is initialized!", async () => {
     // Add your test here.
+    
     const tx = await program.methods.new(wallet.publicKey)
       .accounts({ dataAccount: dataAccount.publicKey })
       .signers([dataAccount]).rpc();
