@@ -46,6 +46,10 @@ It is easier to use following the steps below:
 
 6. To write, build, deploy and test a Solang Solidity smart contract to deploy on Solana Blockchain, run `cd program` and `yarn install` and then `anchor test`.
 
+7. To set devnet env type `solana config set --url devnet` and for creating new address type `solana-keygen new -o ./wallet.json`
+
+8. To get balance type `solana balance`, to get address type 'solana address' and to get airdrop type `solana airdrop <AMOUNT>`
+
 Meanwhile, I have also done a walkthrough video to help even further, watch below:
 
 ## Stucked & Need Support?
