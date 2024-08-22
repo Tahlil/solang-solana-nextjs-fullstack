@@ -1,6 +1,6 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { Program } from "../target/types/program";
+import { HelloWorld } from "../target/types/HelloWorld";
 
 describe("program", () => {
   // Configure the client to use the local cluster.
@@ -10,7 +10,7 @@ describe("program", () => {
   const dataAccount = anchor.web3.Keypair.generate();
   const wallet = provider.wallet;
 
-  const program = anchor.workspace.Program as Program<Program>;
+  const program = anchor.workspace.Program as Program<HelloWorld>;
 
   it("Is initialized!", async () => {
     // Add your test here.

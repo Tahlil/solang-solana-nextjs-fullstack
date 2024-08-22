@@ -1,6 +1,6 @@
 
 @program_id("F1ipperKF9EfD821ZbbYjS319LXYiBmjhzkkf5a26rC")
-contract program {
+contract HelloWorld {
     bool private value = true;
 
     @payer(payer)
